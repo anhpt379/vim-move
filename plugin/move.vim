@@ -270,12 +270,12 @@ endfunction
 " also return the wrong results. Because of this, we have switched everything
 " to using <C-u>.
 
-vnoremap <silent> <Plug>MoveBlockDown           :<C-u> silent call <SID>MoveBlockVertically( v:count1)<CR>:call repeat#set("\<Plug>MoveBlockDown")<CR>
-vnoremap <silent> <Plug>MoveBlockUp             :<C-u> silent call <SID>MoveBlockVertically(-v:count1)<CR>:call repeat#set("\<Plug>MoveBlockUp")<CR>
-vnoremap <silent> <Plug>MoveBlockHalfPageDown   :<C-u> silent call <SID>MoveBlockVertically( v:count1 * <SID>HalfPageSize())<CR>:call repeat#set("\<Plug>MoveBlockHalfPageDown")<CR>
-vnoremap <silent> <Plug>MoveBlockHalfPageUp     :<C-u> silent call <SID>MoveBlockVertically(-v:count1 * <SID>HalfPageSize())<CR>:call repeat#set("\<Plug>MoveBlockHalfPageUp")<CR>
-vnoremap <silent> <Plug>MoveBlockRight          :<C-u> silent call <SID>MoveBlockHorizontally( v:count1)<CR>:call repeat#set("\<Plug>MoveBlockRight")<CR>
-vnoremap <silent> <Plug>MoveBlockLeft           :<C-u> silent call <SID>MoveBlockHorizontally(-v:count1)<CR>:call repeat#set("\<Plug>MoveBlockLeft")<CR>
+vnoremap <silent> <Plug>MoveBlockDown           :<C-u> silent call <SID>MoveBlockVertically( v:count1)<CR>:call repeat#set("\<Plug>MoveBlockDown")<CR>gv
+vnoremap <silent> <Plug>MoveBlockUp             :<C-u> silent call <SID>MoveBlockVertically(-v:count1)<CR>:call repeat#set("\<Plug>MoveBlockUp")<CR>gv
+vnoremap <silent> <Plug>MoveBlockHalfPageDown   :<C-u> silent call <SID>MoveBlockVertically( v:count1 * <SID>HalfPageSize())<CR>:call repeat#set("\<Plug>MoveBlockHalfPageDown")<CR>gv
+vnoremap <silent> <Plug>MoveBlockHalfPageUp     :<C-u> silent call <SID>MoveBlockVertically(-v:count1 * <SID>HalfPageSize())<CR>:call repeat#set("\<Plug>MoveBlockHalfPageUp")<CR>gv
+vnoremap <silent> <Plug>MoveBlockRight          :<C-u> silent call <SID>MoveBlockHorizontally( v:count1)<CR>:call repeat#set("\<Plug>MoveBlockRight")<CR>gv
+vnoremap <silent> <Plug>MoveBlockLeft           :<C-u> silent call <SID>MoveBlockHorizontally(-v:count1)<CR>:call repeat#set("\<Plug>MoveBlockLeft")<CR>gv
 
 nnoremap <silent> <Plug>MoveLineDown            :<C-u> silent call <SID>MoveLineVertically( v:count1)<CR>:call repeat#set("\<Plug>MoveLineDown")<CR>
 nnoremap <silent> <Plug>MoveLineUp              :<C-u> silent call <SID>MoveLineVertically(-v:count1)<CR>:call repeat#set("\<Plug>MoveLineUp")<CR>
